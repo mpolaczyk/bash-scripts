@@ -15,5 +15,5 @@ else
     # p - port
     # N - do not execute commands
     # R - create tunnel
-    ssh -N -p $hostport -R $tunnelport:localhost:$hostport $hostuser@$host &
+    ssh -fN -p $hostport -R $tunnelport:localhost:$hostport $hostuser@$host & 
 fi
